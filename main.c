@@ -7,12 +7,10 @@
 
 
 int main() {
-    char *input = "1+2+3";
+    char *input = "-4000000-2*(-6666+2)*456";
+
     char *last = last_order(input);
-
-    printf("%s\n", last);
-
     int t = calc(last);
-    printf("\n%d", t);
+    printf("%d\n", t);
 
 }

@@ -36,7 +36,7 @@ char char_stack_top(char_stack *s) {
 
 char_stack *new_char_stack() {
     char_stack *s = (char_stack *) malloc(sizeof(char_stack)); // 给 s 分配堆内存地址
-    s->arr = (char *) malloc(sizeof(char)); // s 的 arr 分配内存地址
+    s->arr = (char *) malloc(1000); // s 的 arr 分配内存地址
     s->len = 0;
     return s;
 }
